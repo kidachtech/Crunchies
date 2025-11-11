@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      class="flex h-[20vh] items-center justify-around bg-white sticky top-0"
+    >
+      <div>
+        <img src="/image/logo-white.webp" width="100" alt="" />
+      </div>
+      <div class="flex gap-1">
+        <i class="bi bi-geo-alt text-[red]"></i>
+        <p class="cursor-pointer">Set Location</p>
+      </div>
+      <nav class="flex gap-7 font-semibold">
+        <a href="" class="hover:text-[red]">Home</a>
+        <a href="" class="hover:text-[red]">Menu </a>
+        <a href="" class="hover:text-[red]">Offers</a>
+        <a href="" class="hover:text-[red]">Fan Club</a>
+        <a href="" class="hover:text-[red]">Blog</a>
+        <a href="" class="hover:text-[red]">About Us</a>
+        <a href="" class="hover:text-[red]">My Account</a>
+        <a href="" class="hover:text-[red]">Support</a>
+      </nav>
+      <button
+        class="bg-[red] cursor-pointer p-3 rounded-md text-white w-[10vw] font-bold"
+      >
+        Order Now
+      </button>
+      <div>
+        <i class="bi bi-cart3 text-[red] cursor-pointer mr-4"></i>
+        <i class="bi bi-list text-[red] cursor-pointer"></i>
+      </div>
+    </header>
+    <!-- Am out of header -->
+    <main class="flex flex-col">
+      <section class="flex gap-10 items-center pt-20 pl-10">
+        <div>
+          <div class="text-[red]">
+            <p class="text-xl font-semibold">Welcome to CRUNCHIES!</p>
+            <p class="text-6xl font-bold">
+              Taste the <br />
+              Difference...
+            </p>
+            <p class="font-semibold pt-6">
+              How would you like to receive your <br />
+              order?
+            </p>
+          </div>
+
+          <div class="text-[white] gap-7 flex mt-4">
+            <div
+              class="bg-[red] flex flex-col rounded-md w-[8vw] items-center font-semibold p-3 cursor-pointer hover:bg-black"
+            >
+              <i class="bi bi-truck"></i>
+              <p>DELIVERY</p>
+            </div>
+
+            <div
+              class="bg-[red] flex flex-col rounded-md w-[8vw] items-center font-semibold p-3 cursor-pointer hover:bg-black"
+            >
+              <i class="bi bi-handbag"></i>
+              <p>PICKUP</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMAGE DIV -->
+        <div class="mt--20 ml-10">
+          <img src="./image/cruch.webp" alt="" width="100%" />
+        </div>
+      </section>
+      <!-- DISCOVER SECTION -->
+      <section class="pt-10 h-[70vh] flex items-center flex-col">
+        <h1 class="font-bold text-center text-4xl text-[red]">
+          Discover Our Menu
+        </h1>
+        <div class="w-[5%] border-[3px] border-[red] mt-2 rounded-md"></div>
+        <section class="grid grid-cols-3 gap-10 pt-4">
+          <div
+            class="h-52 w-72 bg-[url('/image/Food-min_zhoyip.jpg')] rounded-md bg-cover bg-no-repeat"
+          >
+            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Food</p>
+          </div>
+          <div
+            class="h-52 w-72 bg-[url('/image/pp.jpg')] rounded-md bg-cover bg-no-repeat"
+          >
+            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Protein</p>
+          </div>
+          <div
+            class="h-52 w-72 bg-[url('/image/Pastries-min_ov0lj2.jpg')] rounded-md bg-cover bg-no-repeat"
+          >
+            <p class="text-white font-bold pt-[150px] px-3 text-2xl">
+              Pastries
+            </p>
+          </div>
+          <div
+            class="h-52 w-72 bg-[url('/image/Cakes-min_rgqujz.jpg')] rounded-md bg-cover bg-no-repeat"
+          >
+            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Cakes</p>
+          </div>
+          <div
+            class="h-52 w-72 bg-[url('/image/Sharwama-min_botuhf.jpg')] rounded-md bg-cover bg-no-repeat"
+          >
+            <p class="text-white font-bold pt-[150px] px-3 text-2xl">
+              Shawarma
+            </p>
+          </div>
+          <div
+            class="h-52 w-72 bg-[url('/image/Bread-min_brgaeo.jpg')] rounded-md bg-cover bg-no-repeat"
+          >
+            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Bread</p>
+          </div>
+        </section>
+        <div class="pt-7">
+          <button
+            class="bg-[red] rounded-md text-white p-3 px-4 font-bold hover:bg-black cursor-pointer"
+          >
+            See More
+          </button>
+        </div>
+      </section>
+    </main>
+    <main class="mt-5">
+      <section>
+        <img src="./image/OFADA.png" alt="" />
+      </section>
+    </main>
+  </body>
+</html>
