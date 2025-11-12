@@ -18,7 +18,7 @@
         <img src="/image/logo-white.webp" width="100" alt="" />
       </div>
       <div class="flex gap-1">
-        <i class="bi bi-geo-alt text-[red]"></i>
+        <i class="bi bi-geo-alt text-1xl text-[red]"></i>
         <p class="cursor-pointer">Set Location</p>
       </div>
       <nav class="flex gap-7 font-semibold">
@@ -36,33 +36,31 @@
       >
         Order Now
       </button>
-      <div>
-        <i class="bi bi-cart3 text-[red] cursor-pointer mr-4"></i>
-        <i class="bi bi-list text-[red] cursor-pointer"></i>
+      <div class="flex gap-5">
+        <i class="bi bi-cart3 text-[red] cursor-pointer text-2xl"></i>
+        <i class="bi bi-list text-[red] cursor-pointer text-3xl"></i>
       </div>
     </header>
     <!-- Am out of header -->
-    <main class="flex flex-col">
-      <section class="flex gap-10 items-center pt-20 pl-10">
-        <div>
-          <div class="text-[red]">
-            <p class="text-xl font-semibold">Welcome to CRUNCHIES!</p>
-            <p class="text-6xl font-bold">
-              Taste the <br />
-              Difference...
-            </p>
-            <p class="font-semibold pt-6">
-              How would you like to receive your <br />
-              order?
-            </p>
-          </div>
+    <main class="p-3 pt-8">
+      <section class="flex justify-between">
+        <div class="text-[red]">
+          <p class="text-3xl font-semibold">Welcome to CRUNCHIES!</p>
+          <p class="text-8xl font-bold">
+            Taste the <br />
+            Difference...
+          </p>
+          <p class="font-semibold pt-6 text-2xl">
+            How would you like to receive your <br />
+            order?
+          </p>
 
-          <div class="text-[white] gap-7 flex mt-4">
+          <div class="text-[white] gap-7 mt-4 flex">
             <div
               class="bg-[red] flex flex-col rounded-md w-[8vw] items-center font-semibold p-3 cursor-pointer hover:bg-black"
             >
-              <i class="bi bi-truck"></i>
-              <p>DELIVERY</p>
+              <i class="bi bi-truck font-bold"></i>
+              <p class="font-semibold">DELIVERY</p>
             </div>
 
             <div
@@ -75,65 +73,234 @@
         </div>
 
         <!-- IMAGE DIV -->
-        <div class="mt--20 ml-10">
+        <div class="-mt-10">
           <img src="./image/cruch.webp" alt="" width="100%" />
         </div>
       </section>
-      <!-- DISCOVER SECTION -->
-      <section class="pt-10 h-[70vh] flex items-center flex-col">
-        <h1 class="font-bold text-center text-4xl text-[red]">
-          Discover Our Menu
-        </h1>
-        <div class="w-[5%] border-[3px] border-[red] mt-2 rounded-md"></div>
-        <section class="grid grid-cols-3 gap-10 pt-4">
-          <div
-            class="h-52 w-72 bg-[url('/image/Food-min_zhoyip.jpg')] rounded-md bg-cover bg-no-repeat"
-          >
-            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Food</p>
-          </div>
-          <div
-            class="h-52 w-72 bg-[url('/image/pp.jpg')] rounded-md bg-cover bg-no-repeat"
-          >
-            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Protein</p>
-          </div>
-          <div
-            class="h-52 w-72 bg-[url('/image/Pastries-min_ov0lj2.jpg')] rounded-md bg-cover bg-no-repeat"
-          >
-            <p class="text-white font-bold pt-[150px] px-3 text-2xl">
-              Pastries
-            </p>
-          </div>
-          <div
-            class="h-52 w-72 bg-[url('/image/Cakes-min_rgqujz.jpg')] rounded-md bg-cover bg-no-repeat"
-          >
-            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Cakes</p>
-          </div>
-          <div
-            class="h-52 w-72 bg-[url('/image/Sharwama-min_botuhf.jpg')] rounded-md bg-cover bg-no-repeat"
-          >
-            <p class="text-white font-bold pt-[150px] px-3 text-2xl">
-              Shawarma
-            </p>
-          </div>
-          <div
-            class="h-52 w-72 bg-[url('/image/Bread-min_brgaeo.jpg')] rounded-md bg-cover bg-no-repeat"
-          >
-            <p class="text-white font-bold pt-[150px] px-3 text-2xl">Bread</p>
-          </div>
-        </section>
-        <div class="pt-7">
-          <button
-            class="bg-[red] rounded-md text-white p-3 px-4 font-bold hover:bg-black cursor-pointer"
-          >
-            See More
-          </button>
+    </main>
+    <!-- DISCOVER SECTION -->
+
+    <section class="flex flex-col items-center mt-10">
+      <h1 class="text-red-500 text-center font-bold text-5xl w-fit">
+        Discover our Menu
+      </h1>
+      <div class="rounded-xl border-5 border-red-500 w-[6%] mt-4"></div>
+      <section class="mt-9 text-center grid grid-cols-3 gap-10">
+        <div
+          class="cursor-pointer w-70 h-40 bg-[url('/image/Food-min_zhoyip.jpg')] rounded-xl bg-center bg-no-repeat bg-cover flex items-end"
+        >
+          <p class="font-semibold text-white text-4xl mb-3 ml-3">Food</p>
+        </div>
+        <div
+          class="cursor-pointer w-70 h-40 bg-[url('/image/pp.jpg')] rounded-xl bg-center bg-no-repeat bg-cover flex items-end"
+        >
+          <p class="font-semibold text-white text-4xl mb-3 ml-3">Protein</p>
+        </div>
+        <div
+          class="cursor-pointer w-70 h-40 bg-[url('/image/Pastries-min_ov0lj2.jpg')] rounded-xl bg-center bg-no-repeat bg-cover flex items-end"
+        >
+          <p class="font-semibold text-white text-4xl mb-3 ml-3">Pasteries</p>
+        </div>
+        <div
+          class="cursor-pointer w-70 h-40 bg-[url('/image/Cakes-min_rgqujz.jpg')] rounded-xl bg-center bg-no-repeat bg-cover flex items-end"
+        >
+          <p class="font-semibold text-white text-4xl mb-3 ml-3">Cake</p>
+        </div>
+        <div
+          class="cursor-pointer w-70 h-40 bg-[url('/image/Sharwama-min_botuhf.jpg')] rounded-xl bg-center bg-no-repeat bg-cover flex items-end"
+        >
+          <p class="font-semibold text-white text-4xl mb-3 ml-3">Shawarma</p>
+        </div>
+        <div
+          class="cursor-pointer w-70 h-40 bg-[url('/image/Bread-min_brgaeo.jpg')] rounded-xl bg-center bg-no-repeat bg-cover flex items-end"
+        >
+          <p class="font-semibold text-white text-4xl mb-3 ml-3">Bread</p>
         </div>
       </section>
-    </main>
-    <main class="mt-5">
-      <section>
-        <img src="./image/OFADA.png" alt="" />
-      </section>
-    </main>
+      <button
+        class="bg-red-600 text-white px-7 py-3 rounded-lg mt-10 font-bold hover:bg-black cursor-pointer"
+      >
+        <i class="bi bi-cup-hot-fill"></i> See more
+      </button>
+    </section>
+    <!-- Discover -->
+
+    <!-- ORDER ON THE GO -->
+    <section class="bg-red-600 mt-20 flex justify-center items-center gap-7">
+      <div>
+        <img src="./image/OFADA.png" alt="" width="300px" />
+      </div>
+      <div class="mt-10">
+        <h1 class="text-5xl text-white font-bold">
+          Order on the <br />
+          Go!
+        </h1>
+        <br />
+        <p class="text-white">
+          Our mobile apps are now available on your devices app store
+        </p>
+        <br />
+        <div class="flex gap-4">
+          <div class="bg-black w-fit rounded-md p-3 cursor-pointer">
+            <p class="text-white">
+              <i class="bi bi-google-play"></i> Andriod app on
+            </p>
+            <p class="text-white font-bold text-lg">Google Play</p>
+          </div>
+          <div class="bg-black w-fit rounded-md p-3 cursor-pointer">
+            <p class="text-white">
+              <i class="bi bi-apple"></i> Download on the
+            </p>
+            <p class="text-white font-bold text-lg">App Store</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ORDER OUT -->
+
+    <section>
+      <div class="flex flex-col items-center">
+        <h1 class="text-red-500 text-center font-bold text-5xl w-fit mt-10">
+          About Us
+        </h1>
+        <div class="rounded-xl border-5 border-red-500 w-[6%] mt-4"></div>
+      </div>
+      <br />
+      <div class="flex items-center text-justify gap-16 pl-40">
+        <div class="flex flex-col">
+          <article>
+            <p>
+              Crunchies Fried Chicken is a first-grade quick service restaurant
+              that offers a variety of quality fast food products and
+              first-class services. We are currently spread across the
+              South-South, South-East and South-West regions of Nigeria, with
+              over 20 years of experience.
+              <br />
+              <br />
+              We have carved the niche of excellence in the fast food market
+              with a service per excellence acquired from interacting with our
+              valued customers.
+            </p>
+          </article>
+          <br />
+          <button
+            class="bg-[red] rounded-md p-3 text-white font-semibold cursor-pointer w-[10vw]"
+          >
+            <i class="bi bi-book-half"></i>
+            Read More
+          </button>
+        </div>
+
+        <div><img src="./image/About_US-min.webp" alt="" width="80%" /></div>
+      </div>
+    </section>
+
+    <section
+      class="bg-pink-300 mt-20 h-[120vh] flex flex-col items-center justify-center"
+    >
+      <div class="flex gap-10">
+        <div
+          class="cursor-pointer w-100 h-60 bg-[url('/image/OFFERS-min.webp')] bg-center bg-no-repeat bg-cover"
+        ></div>
+        <div
+          class="cursor-pointer w-100 h-60 bg-[url('/image/FANCLUB-min.webp')] bg-center bg-no-repeat bg-cover"
+        ></div>
+      </div>
+      <br />
+      <br />
+      <div class="flex gap-10">
+        <div
+          class="cursor-pointer w-100 h-60 bg-[url('/image/CAREERS-min.webp')] bg-center bg-no-repeat bg-cover"
+        ></div>
+        <div
+          class="cursor-pointer w-100 h-60 bg-[url('/image/blog-min.webp')] bg-center bg-no-repeat bg-cover"
+        ></div>
+      </div>
+    </section>
+    <!-- GALLERY SECTION ENDS HERE -->
+    <section
+      class="bg-pink-100 h-[100vh] flex flex-col items-center justify-center"
+    >
+      <figure
+        class="cursor-pointer w-70 h-70 bg-[url('/image/Newsletter-min.webp')] rounded-full bg-center bg-no-repeat bg-cover items-end"
+      ></figure>
+      <figcaption class="text-center">
+        <h1 class="font-bold text-4xl">Subscribe to our Newsletter</h1>
+        <br />
+        <p class="font-semibold">
+          Be the first to get lucky on our amazing offers
+        </p>
+      </figcaption>
+      <br />
+      <div>
+        <input
+          type="text"
+          placeholder="Email Address"
+          class="text-black bg-white p-5 pr-70 rounded-4xl"
+        />
+        <button
+          class="bg-[red] text-white p-6 rounded-4xl -ml-20 font-bold cursor-pointer"
+        >
+          Subscribe Now
+        </button>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER ENDS HERE -->
+    <section class="bg-[red] h-scr flex gap-30 p-10 justify-center">
+      <div>
+        <figure
+          class="w-30 h-30 bg-[url('/image/logo-white.webp')] bg-center bg-no-repeat bg-cover"
+        ></figure>
+        <br />
+        <h1 class="text-white text-4xl font-bold">Opening Hours</h1>
+        <br />
+        <p class="text-white">
+          Mondays to Sundays <br />
+          7:00AM to 9:00PM
+        </p>
+        <br /><br />
+        <h1 class="text-white text-4xl font-bold">Contact Us</h1>
+        <br />
+        <p class="text-white">
+          customercare@crunchiesonline.com <br />
+          09062439146
+        </p>
+      </div>
+      <div class="mt-15">
+        <h1 class="text-white text-4xl font-bold">Quick Navigation</h1>
+        <br />
+        <p class="text-white">
+          Careers <br />
+          Fan Club <br />
+          Offers <br />
+          Privacy Policy <br />
+          Terms and Conditions
+        </p>
+        <br /><br />
+        <h1 class="text-white text-4xl font-bold">Find Us Here</h1>
+        <br />
+        <p class="text-white">
+          <i class="bi bi-instagram text-2xl mr-3"></i>
+          <i class="bi bi-facebook text-2xl mr-3"></i>
+          <i class="bi bi-linkedin text-2xl mr-3"></i>
+          <i class="bi bi-twitter text-2xl mr-3"></i>
+          <i class="bi bi-tiktok text-2xl mr-3"></i>
+        </p>
+      </div>
+      <div class="mt-15">
+        <h1 class="text-white text-4xl font-bold">
+          Tell us how we're doing...
+        </h1>
+        <br />
+        <p class="text-white">Your feedback is valuable to us</p>
+        <br />
+        <button
+          class="bg-[white] hover:bg-black text-[red] p-3 rounded-4xl cursor-pointer text-center justify-center items-center"
+        >
+          Submit Feedback
+        </button>
+      </div>
+    </section>
   </body>
 </html>
